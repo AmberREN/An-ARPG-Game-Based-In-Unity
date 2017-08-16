@@ -10,8 +10,9 @@
   
   四大系统负责具体某段剧情元素的执行，四大系统是剧情系统执行的根基  
   例如：DialogSystem提供了一个public的接口函数，
-  `public IEnumerator EnterDialog(DialogCommand dialogCommand)
-    {   DialogUI.SetActive(true);
+  `public IEnumerator EnterDialog(DialogCommand dialogCommand)   
+  {   
+        DialogUI.SetActive(true);  
         hidenUI.SetActive(false);
         GameObject.Find("Player").GetComponent<PlayerControl>().CommandPlayerIdle();
         yield return  0;
