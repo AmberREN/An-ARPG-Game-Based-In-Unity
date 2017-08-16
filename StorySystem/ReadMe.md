@@ -27,4 +27,5 @@
 
 注意：这四大系统都继承于MonoBehaviour，这意味着他们不能手动实例化，必须绑定在一个GameObject上才能使用，  
 我将这四个系统和StoryManage都绑定在一个空的GameObject（叫做GameManage）上了，可以看到，这个函数需要一个DialogCommand的参数来执行  
-同时这个函数也是一个协程执行的，
+同时这个函数也是一个协程执行的，子系统的先说到这里，待会有用  
+* StoryManage
