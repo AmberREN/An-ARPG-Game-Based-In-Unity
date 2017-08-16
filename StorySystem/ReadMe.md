@@ -22,5 +22,6 @@
         DialogUI.SetActive(false);
         hidenUI.SetActive(true);
         yield return 0;
-    }`
+    }`  
+    
 
