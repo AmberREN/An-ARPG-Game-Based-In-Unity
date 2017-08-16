@@ -6,6 +6,6 @@
 *     DialogSystem（对话系统)  
 *     NpcActionSystem(角色行动控制系统)  
 *     ConditionSystem（条件判定系统）
-*     TaskSystem（任务系统）  
-负责具体某段剧情元素的执行，四大系统是剧情系统执行的根基  
+*     TaskSystem（任务系统）  
+四大系统负责具体某段剧情元素的执行，四大系统是剧情系统执行的根基
 
