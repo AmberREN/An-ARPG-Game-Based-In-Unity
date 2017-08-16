@@ -31,7 +31,8 @@
 * StoryManage
 StoryManage是一个最终要的类，他读取了xml中的数据并整理好存入对应自定义的数据结构中  
 然后在Start()函数中执行协程，从此之后，游戏剧情就开始了！协程会一直执行！  
-如果ConditionList不满足，剧情会等待在那里，玩家可以自主控制Player，知道Condition满足为止  
+如果ConditionList不满足，剧情会等待在那里，玩家可以自主控制Player，知道Condition满足为止    
+
         public void ReadStoryFormFile()
         {
             Command command = new Command();
