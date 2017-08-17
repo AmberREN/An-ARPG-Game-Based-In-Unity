@@ -94,9 +94,8 @@ StoryManage是一个最终要的类，他读取了xml中的数据并整理好存
       <Condition type="TRIGGER" self="Player" aimGameObject="HeiYiRen" range="3">
       </Condition>
     </ConditionList>  
-    <DialogList>
-            <Dialog Name="旁白" spriteName="pangbai" index="6">
-           梁文靖父子在地上发现一堆死尸，一堆黑衣人正在处理死尸，只见一堆死尸之中有一人衣着华贵，面容年轻俊秀，腰间佩着一流光溢彩的玉佩，煞是吸人眼球，正处于死尸中间，明显身份尊贵非凡......
+        <DialogList>
+            <Dialog Name="旁白" spriteName="pangbai" index="6">梁文靖父子在地上发现一堆死尸，一堆黑衣人正在处理死尸，只见一堆死尸之中有一人衣着华贵，面容年轻俊秀，腰间佩着一流光溢彩的玉佩，煞是吸人眼球，正处于死尸中间，明显身份尊贵非凡......
       </Dialog>
 
       <Dialog Name="黑衣人" spriteName="heiyiren"  index="7">
