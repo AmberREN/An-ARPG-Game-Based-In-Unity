@@ -86,5 +86,58 @@ StoryManage是一个最终要的类，他读取了xml中的数据并整理好存
    非常直白  。 
    ![Imag](pictures/Story.png)
   
-  在这里有出现过一个难题，那就是Command是自定义的类，无法支持unity内的协程，后来在Command类中引用了一个GameObject实例作为变量，用这个变量调用协程才行！  
+  在这里有出现过一个难题，那就是Command是自定义的类，无法支持unity内的协程，后来在Command类中引用了一个GameObject实例作为变量，用这个变量调用协程才行！    
+  * 最后贴一段Xml的剧情出来  
+      
+           <StoryElement>
+    <ConditionList>
+      <Condition type="TRIGGER" self="Player" aimGameObject="HeiYiRen" range="3">
+      </Condition>
+    </ConditionList>  
+    <DialogList>
+      <Dialog Name="旁白" spriteName="pangbai" index="6">
+        梁文靖父子在地上发现一堆死尸，一堆黑衣人正在处理死尸，只见一堆死尸之中有一人衣着华贵，面容年轻俊秀，腰间佩着一流光溢彩的玉佩，煞是吸人眼球，正处于死尸中间，明显身份尊贵非凡......
+      </Dialog>
+
+      <Dialog Name="黑衣人" spriteName="heiyiren"  index="7">
+        质问：“你们是什么人？”
+      </Dialog>
+
+      <Dialog Name="梁文靖" spriteName="heroIcon" index="8">
+        嘻嘻笑道：“这些话应该是我们问才对！”
+      </Dialog>
+
+      <Dialog Name="梁天德" spriteName="LiangTianDe" index="9">
+        喝问：“听你们口音，倒不像汉人，说，你们是不是鞑子的奸细！”
+      </Dialog>
+
+      <Dialog Name="梁文靖" spriteName="heroIcon" index="10">
+        "老爹真是神目如电，料事如神！依我看，这帮人的目标就是中间这年轻人，这年轻人衣着不凡，显然身份尊贵，尔等定是鞑子高官派来行刺的奸细！"
+      </Dialog>
+
+      <Dialog Name="黑衣人" spriteName="heiyiren" index="11">
+        阴险道：“嘿嘿，知道的越多可是死的越快哪！兄弟们上，宰了这两个不知天高地厚的撮尔小民！”
+      </Dialog>
+
+      <Dialog Name="梁文靖" spriteName="heroIcon" index="12">
+        （摩拳擦掌）嘿然道：“鹿死谁手可还不知道呢，让你们知道我的厉害！”
+      </Dialog>
+
+      <Dialog Name="梁天德"  spriteName="LiangTianDe" index="13">
+        "臭小子小心点！"
+      </Dialog>
+    </DialogList>
+    <NpcActionList>
+      <NpcAction name="LiangTianDe" actionType="FollowToAim" aimGameObject="Player"></NpcAction>
+      <NpcAction name="HeiYiRen" actionType="Attack" aimGameObject="Player"></NpcAction>
+    </NpcActionList>
+    <Task>
+      <TaskText targetGameObject="">打败黑衣人</TaskText>
+      <RewardList>
+        <Reward ToolType="CURBLOOD" Value="10">回血散</Reward>
+        <Reward ToolType="ALLBLOOD" Value="20">生血丸</Reward>
+        <Reward ToolType="AttackTool" Value="10">普通铁剑</Reward>
+      </RewardList>
+    </Task>
+  </StoryElement>
   
