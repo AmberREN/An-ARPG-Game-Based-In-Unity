@@ -83,5 +83,8 @@ StoryManage是一个最终要的类，他读取了xml中的数据并整理好存
     }  
     
    这里的数据结构关系可能会比较复杂，所有在StoryList表中的数据结构都存储在PlayerState.cs中，我在这里给出一张图  
-   非常直白
+   非常直白  。 
    ![Imag](pictures/Story.png)
+  
+  在这里有出现过一个难题，那就是Command是自定义的类，无法支持unity内的协程，后来在Command类中引用了一个GameObject实例作为变量，用这个变量调用协程才行！  
+  
