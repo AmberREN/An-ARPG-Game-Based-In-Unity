@@ -88,13 +88,14 @@ StoryManage是一个最终要的类，他读取了xml中的数据并整理好存
   
   在这里有出现过一个难题，那就是Command是自定义的类，无法支持unity内的协程，后来在Command类中引用了一个GameObject实例作为变量，用这个变量调用协程才行！    
   * 最后贴一段Xml的剧情出来  具体的很多细节还请看代码，自认为这个XML剧情解析器还是很不错的
-        <StoryElement>
+  
+            <StoryElement>
     <ConditionList>
       <Condition type="TRIGGER" self="Player" aimGameObject="HeiYiRen" range="3">
       </Condition>
     </ConditionList>  
     <DialogList>
-      <Dialog Name="旁白" spriteName="pangbai" index="6">
+         <Dialog Name="旁白" spriteName="pangbai" index="6">
         梁文靖父子在地上发现一堆死尸，一堆黑衣人正在处理死尸，只见一堆死尸之中有一人衣着华贵，面容年轻俊秀，腰间佩着一流光溢彩的玉佩，煞是吸人眼球，正处于死尸中间，明显身份尊贵非凡......
       </Dialog>
 
