@@ -84,4 +84,4 @@ StoryManage是一个最终要的类，他读取了xml中的数据并整理好存
     
    这里的数据结构关系可能会比较复杂，所有在StoryList表中的数据结构都存储在PlayerState.cs中，我在这里给出一张图  
    非常直白
-   ![Imag](../pictures/Story.png)
+   ![Imag](pictures/Story.png)
