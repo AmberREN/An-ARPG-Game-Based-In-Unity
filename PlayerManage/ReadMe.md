@@ -6,5 +6,6 @@
 在这个过程中，鼠标,摇杆，按钮或者剧情数据只能通过调用PlayerControl组件中的接口来控制整个角色的行为，最终的行为只能Control控制
 
 * NpcControl Npc的只有 NpcControl和NpcAttributMange  
-* 剩余的都是Player
-注：MVC尚未重构，Data没有抽离出来
+* 剩余的都是Player  
+
+* 注：MVC尚未重构，Data没有抽离出来
